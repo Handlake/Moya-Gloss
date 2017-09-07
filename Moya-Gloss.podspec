@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Moya-Gloss"
-  s.version          = "2.0.2"
+  s.version          = "2.1.0"
   s.summary          = "Convenience Gloss bindings for Moya."
   s.description      = <<-EOS
     [Gloss](https://github.com/hkellaway/Gloss) bindings for
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     [the README](https://github.com/spxrogers/Moya-Gloss).
   EOS
 
-  s.homepage         = "https://github.com/spxrogers/Moya-Gloss"
+  s.homepage         = "https://github.com/Handlake/Moya-Gloss"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "steven rogers" => "me@srogers.net" }
   s.source           = { :git => "https://github.com/spxrogers/Moya-Gloss.git", :tag => s.version.to_s }
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Source/*.swift"
-    ss.dependency "Moya", "~> 8.0"
+    ss.dependency "Moya", "~> 9.0.0"
     ss.dependency "Gloss", "~> 1.2"
     ss.framework  = "Foundation"
   end
